@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang = "pt-br">
+    <head>
+         <title> Calculadora </title>
+         <link rel="stylesheet" type="text/css" href="style.css" />
+         <meta charset = "UTF-8">
+         <script src="calc.js"></script>
+         <title>Calculadora</title>
+   </head>
+</html>
+   <body>
+      <div>
+         <table class="calc border"  border="0px" align="center">
+               <tr>
+                  <th class="titulocalc" colspan="8">Calculadora</th>
+               </tr>
+               <tr>
+                  <td colspan="8">
+                  <form name="form" >
+                     <input maxlength="9"  class="textview" name="textview" readonly /> <br>
+                  </td>
+               </tr>
+               <tr>
+                  <!--<td colspan="2" align="center">
+                     <input class="fundobtns" type="button" value="%" />
+                  </td>-->
+                  <td colspan="2" align="center">
+                     <input class="fundobtns" type="button" onclick="back()" value="<" />
+                  </td>
+                  <td colspan="2" align="center">
+                     <input class="fundobtns" type="button" onclick='c()' value="C" />
+                  </td>
+                  <td colspan="2" align="center">
+                     <input class="fundobtns" type="button" onclick="insert('/')" value="/" />
+                  </td>
+                  <td colspan="2" align="center">
+                     <input class="fundobtns" type="button" onclick="insert('*')" value="x" />
+                  </td>
+               </tr>
+               <tr>
+                  <td colspan="2" align="center">
+                     <input class="fundobtns" type="button" onclick="insert(7)" value="7" />
+                  </td>
+                  <td colspan="2" align="center">
+                     <input class="fundobtns" type="button" onclick="insert(8)" value="8" />
+                  </td>
+                  <td colspan="2" align="center">
+                     <input class="fundobtns" type="button" onclick="insert(9)" value="9" />
+                  </td>
+                  <td colspan="2" align="center">
+                     <input class="fundobtns" type="button" onclick="insert('+')" value="+" />
+                  </td>
+               </tr>
+               <tr>
+                  <td colspan="2" align="center">
+                     <input class="fundobtns" type="button" onclick="insert(4)" value="4" />
+                  </td>
+                  <td colspan="2" align="center">
+                     <input class="fundobtns" type="button" onclick="insert(5)" value="5" />
+                  </td>
+                  <td colspan="2" align="center">
+                     <input class="fundobtns" type="button" onclick="insert(6)" value="6" />
+                  </td>
+                  <td colspan="2" align="center">
+                     <input class="fundobtns" type="button" onclick="insert('-')" value="-" />
+                  </td>
+               </tr>
+               <tr>
+                  <td colspan="2" align="center">
+                     <input class="fundobtns" type="button" onclick="insert(1)" value="1" />
+                  </td>
+                  <td colspan="2" align="center">
+                     <input class="fundobtns" type="button" onclick="insert(2)" value="2" />
+                  </td>
+                  <td colspan="2" align="center">
+                     <input class="fundobtns" type="button" onclick="insert(3)" value="3" />
+                  </td>
+                  <td rowspan="4" colspan="2" align="center">
+                     <input class="igualgrande" type="button" onclick='equal()' value="=" />
+                  </td>
+               </tr>
+               <tr>
+                  <!--<td colspan="2" align="center">
+                     <input class="fundobtns" type="button" value="+/-" />
+                  </td>-->
+                  <td colspan="4" align="center">
+                     <input class="zerogrande" type="button" value='0' onclick="insert(0)" class='button' id='n0' />
+                  </td>
+                  <td colspan="2" align="center">
+                     <input class="fundobtns" type="button" value='.' onclick="insert('.')" class='button' id='n0' />
+                  </td>
+           
+               </div>      </tr>     
+         </table>
+      
+   </body>
+</html>
