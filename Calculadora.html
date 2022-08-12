@@ -10,7 +10,31 @@
 </html>
    <body>
       <div>
-         <table class="calc border"  border="0px" align="center">
+         <table>
+            <tr>
+               <td>
+                  Escolha a cor: 
+               </td>
+               <td>
+                  <Select name="cor" id="cor" style="Width:100px" type="botton" onchange="muda_cor(this.value)">
+                     <optgroup label="Ecolha a Cor">
+                        <option value="#81eaf1"> Selecione</option>
+                        <option value="#ffa500"> Laranja</option>
+                        <option value="#0000ff">Azul</option>
+                        <option value="#74c9e6">Azul Claro</option>
+                        <option value="#ffc0cb">Rosa</option>
+                        <option value="#ffffff">Branco</option>
+                        <option value="#ffff00">Amarelo</option>
+                        <option value="#ff0000">Vermelho</option>
+                        <option value="#6ce63b">Verde</option>
+                        <option value="#a0a0a0ab">Cinza</option>
+                        <option value="#800080">Roxo</option>
+                     </optgroup>
+                  </Select>
+               </td>
+            </tr>
+         </table>
+         <table class="calc border" id="calcor" border="0px" align="center">
                <tr>
                   <th class="titulocalc" colspan="8">Calculadora</th>
                </tr>
@@ -89,8 +113,9 @@
                   <td colspan="2" align="center">
                      <input class="fundobtns" type="button" value='.' onclick="insert('.')" class='button' id='n0' />
                   </td>
-               </tr>     
+               </tr>  
          </table>
+         
       </div>      
    </body>
 </html>
