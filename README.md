@@ -1,2 +1,2 @@
 # Calculadora
-Calculadora com PHP, CSS e JS
+Calculadora HTML, CSS e JS
